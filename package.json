@@ -1,0 +1,30 @@
+{
+  "name": "github-min-coverage",
+  "version": "1.0.0",
+  "description": "Checks a given coverage summary against a given threshold and fails if the threshold is not reached.",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@actions/core": "^1.2.2"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.21.0",
+    "jest": "^25.1.0",
+    "standard": "^14.3.1"
+  },
+  "scripts": {
+    "lint": "standard",
+    "package": "ncc build index.js -o dist",
+    "test": "standard && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jankapunkt/github-min-coverage.git"
+  },
+  "keywords": [],
+  "author": "Jan Küster <info@jankuester.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jankapunkt/github-min-coverage/issues"
+  },
+  "homepage": "https://github.com/jankapunkt/github-min-coverage#readme"
+}

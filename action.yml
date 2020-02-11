@@ -1,0 +1,17 @@
+name: 'Minimum Coverage'
+description: 'Checks a given coverage summary against a given threshold and fails if the threshold is not reached.'
+inputs:
+  path:  # id of input
+    description: 'path to the summary file'
+    required: true
+    default: ''
+  min:  # id of input
+    description: 'minimum threshold to exceed'
+    required: true
+    default: 90
+outputs:
+  message: # id of output
+    description: 'Message of this action'
+runs:
+  using: 'node12'
+  main: 'index.js'

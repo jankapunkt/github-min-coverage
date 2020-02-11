@@ -1,0 +1,19 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Test the coverage action
+    steps:
+      # To use this repository's private action, you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Coverage check action step
+        uses: ./ # Uses an action in the root directory
+        id: 'main'
+        with:
+          path: 'tests/.coverage/example_summary.json'
+          min: 99
+      # Use the output from the step
+      - name: Get the output time
+        run: echo "${{ steps.main.outputs.message }}"
