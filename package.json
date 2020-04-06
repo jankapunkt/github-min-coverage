@@ -7,7 +7,7 @@
     "@actions/core": "^1.2.2"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.21.0",
+    "@zeit/ncc": "^0.22.0",
     "jest": "^25.1.0",
     "standard": "^14.3.1"
   },
