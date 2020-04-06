@@ -1,5 +1,7 @@
 # Minimal Coverage 
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jankapunkt/github-min-coverage.svg)](https://greenkeeper.io/)
+
 This action is a lightweight coverage checker with no dependencies to third party services
 and no token required.
 
